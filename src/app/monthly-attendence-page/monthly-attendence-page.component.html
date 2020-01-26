@@ -1,0 +1,37 @@
+<br>
+<h4 class="text-center"> ID : {{myId}}</h4>
+<div class="container">
+    <div>
+        <mat-form-field>
+            <mat-label>Select month</mat-label>
+            <mat-select [(ngModel)]='smon'>
+                <mat-option *ngFor="let mon of Month" [value]="mon.value" >
+                {{mon.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button (click)='getAttendance()'>Go</button>
+    </div>
+    <table id="attendence_tables" class="table table-hover shadow p-3 mb-5 bg-white rounded">
+        <thead class="thead-dark">
+            <tr>
+                <th>Date</th>
+                <th>First_Punch</th>
+                <th>Second_Punch</th>
+                <th>Third_Punch</th>
+                <th>Fourth_Punch</th>
+                <th>Present_Absent</th>
+        </tr>
+        </thead>
+        <tbody id="attendence_tables_tbody">
+            <tr *ngFor="let varr of data">
+                <td>{{ varr.date }}</td>
+                <td>{{ varr.firstpunch }}</td>
+                <td>{{ varr.secondpunch }}</td>
+                <td>{{ varr.thirdpunch }}</td>
+                <td>{{ varr.fourthpunch }}</td>
+                <td>{{ varr.status }}</td>
+              </tr>
+        </tbody>
+    </table>
+</div>

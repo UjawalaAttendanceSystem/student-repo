@@ -1,0 +1,41 @@
+<br><div class="container">
+     <div class="shadow p-3 mb-5 bg-white rounded" style="width:100%">
+        <!-- <div style="float:left; width:25%" class="border">
+                <label> Roll No  : </label> <br>
+                <label> Name     : </label> <br>
+                <label> DOB      : </label> <br>
+                <label> Gender   : </label> <br>
+                <label> Phone    : </label> <br>
+                <label> B Group  : </label> <br>
+        </div>
+        <div style="float:left; width:58%" class="border"> 
+                <input type="text" readonly  [(ngModel)]="rollno"><br>
+                <input type="text" [(ngModel)]="name"> <br>
+                <input type="text" [(ngModel)]="dob"><br>
+                <input type="text" [(ngModel)]="gender"><br>
+                <input type="text" [(ngModel)]="phone"><br>
+                <input type="text" [(ngModel)]="bgroup"><br>
+        </div> -->
+        
+                <label> Roll No  : </label> <br>
+                <input type="text" [(ngModel)]="rollno" readonly ><br>
+
+                <label> Name     : </label> <br>
+                <input type="text" [(ngModel)]="name"> <br>
+
+                <label> DOB      : </label> <br>
+                <input type="text" [(ngModel)]="dob"><br>
+
+                <label> Gender   : </label> <br>
+                <input type="text" [(ngModel)]="gender"><br>
+
+                <label> Phone    : </label> <br>
+                <input type="text" [(ngModel)]="phone"><br>
+
+                <label> B Group  : </label> <br>
+                <input type="text" [(ngModel)]="bgroup"><br><br>
+        
+        <button class="btn btn-lg btn-primary" (click)='subfun()'>Submit</button><br><br>
+          <p style="color: red;">{{ this.msg }}</p>
+     </div>
+</div>
