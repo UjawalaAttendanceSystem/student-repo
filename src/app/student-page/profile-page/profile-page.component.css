@@ -1,0 +1,9 @@
+.headerforbackgroundProfile
+ {
+    background: url(src\assets\images\background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 600px;
+ }
